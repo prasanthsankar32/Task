@@ -1,0 +1,22 @@
+<div class="container">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>avatar</th>
+        <th>Name</th>
+        <th>ProductName</th>
+        <th>Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of arrayData">
+        <td>{{item.id}}</td>
+        <td><img [src]="item.avatar"></td>
+        <td>{{item.name}}</td>
+        <td>{{item.productname}}</td>
+        <td>{{item.price}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
